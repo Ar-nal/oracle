@@ -86,3 +86,63 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+/* Media Queries tablets (pantallas entre 600px y 900px) */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .input-container, .output-container {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Media Queries móviles (pantallas menores a 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+        font-size: 1.5em;
+    }
+
+    .main-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    #outputText {
+        font-size: 0.7em; /* Tamaño más reducido para móviles */
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
